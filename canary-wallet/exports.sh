@@ -1,4 +1,4 @@
-export APP_CANARY_PORT="3005"
+export APP_CANARY_WALLET_PORT="3005"
 
 # Auto-detect optional Mempool integration
 # If Mempool is installed on Umbrel, pass its port so Canary Wallet can link to it
@@ -6,9 +6,9 @@ export APP_CANARY_PORT="3005"
 # if Mempool is a dependency. Since it's optional, we hardcode the known port.
 installed_apps=$("${UMBREL_ROOT}/scripts/app" ls-installed)
 if echo "$installed_apps" | grep --quiet '^mempool$'; then
-  export APP_CANARY_MEMPOOL_PORT="3006"
+  export APP_CANARY_WALLET_MEMPOOL_PORT="3006"
 fi
 
 if echo "$installed_apps" | grep --quiet '^ntfy$'; then
-  export APP_CANARY_UMBREL_NTFY_URL="http://ntfy_app_1"
+  export APP_CANARY_WALLET_UMBREL_NTFY_URL="http://ntfy_app_1"
 fi

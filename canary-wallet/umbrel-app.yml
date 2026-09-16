@@ -1,5 +1,5 @@
 manifestVersion: 1.1
-id: canary
+id: canary-wallet
 category: bitcoin
 name: Canary Wallet
 version: "1.6.4"
@@ -16,9 +16,9 @@ description: >-
 
   Set custom balance alerts (equal, less than, or more than) to monitor your holdings. Perfect for monitoring cold storage and Bitcoin holdings you don't actively use.
 developer: schjonhaug
-website: https://github.com/schjonhaug/canary
-repo: https://github.com/schjonhaug/canary
-support: https://github.com/schjonhaug/canary/issues
+website: https://github.com/schjonhaug/canary-wallet
+repo: https://github.com/schjonhaug/canary-wallet
+support: https://github.com/schjonhaug/canary-wallet/issues
 port: 3005
 dependencies:
   - electrs
